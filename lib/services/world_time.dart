@@ -19,7 +19,7 @@ class WorldTime{
      //make the request
      Response response = await get('http://worldtimeapi.org/api/timezone/$url');
      Map data = jsonDecode(response.body);
-     //print(data);
+     print(data);
 
      //get properties from data
      String datetime = data['datetime'];
